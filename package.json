@@ -2,7 +2,7 @@
   "name": "charliechen",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:bsmsnd/charliechen.github.io.git",
+  "repository": "git@github.com:bsmsnd/charliechen.git",
   "author": "Charlie Chen",
   "license": "GPL v3",
   "devDependencies": {
@@ -10,6 +10,7 @@
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "deploy-gh": "GH=1 yarn docs:build && bash scripts/deploy-gh.sh"
   }
 }
