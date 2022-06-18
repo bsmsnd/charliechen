@@ -6,11 +6,14 @@
   "author": "Charlie Chen",
   "license": "GPL v3",
   "devDependencies": {
-    "vuepress": "^2.0.0-beta.47"
+    "vuepress": "^1.9.7"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "deploy-gh": "GH=1 yarn docs:build && bash scripts/deploy-gh.sh"
+  },
+  "dependencies": {
+    "vuepress-plugin-latex": "^0.1.3"
   }
 }
