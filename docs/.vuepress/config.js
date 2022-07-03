@@ -7,5 +7,10 @@ module.exports = {
     themeConfig: {
       sidebar: 'auto',
       logo: '/logo.png',
+      nav: [
+        { text: '刷题', link: '/leetcode_solutions/' },
+        { text: 'Migrate To VuePress', link: '/to_vuepress/' },
+        { text: 'GitHub', link: 'https://github.com/bsmsnd/charliechen'}
+      ]
     }
   }
