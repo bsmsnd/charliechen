@@ -1,8 +1,8 @@
 ---
 home: true
 lang: zh-CN
-title: Title of this page
-description: Description of this page
+title: 欢迎来到 Charlie 的菜地
+description: Charlie的菜地
 footer: GPU GPL v3 Licensed | Copyright © 2022 Charlie Chen
 ---
 # 你好！
