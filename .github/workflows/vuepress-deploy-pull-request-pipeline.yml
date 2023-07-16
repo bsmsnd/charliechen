@@ -1,0 +1,25 @@
+name: Test Deploy GitHub Pages
+
+on:
+    pull_request:
+        types: [opened, reopened]
+
+jobs:
+    test-build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            # 拉取代码
+            - name: Checkout
+              uses: actions/checkout@v2
+              with:
+                persist-credentials: false
+            # 生成静态文件
+            - name: Build
+              run: npm install && npm run docs:build
+            # # 尝试部署
+            # - name: Test Deploy
+            #   uses: JamesIves/github-pages-deploy-action@releases/v3
+            #   with:
+            #     ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # 也就是我们刚才生成的 secret
+            #     BRANCH: gh-pages-test # 部署到 gh-pages-test 分支，因为 main 分支存放的一般是源码，而 gh-pages 分支则用来存放生成的静态文件
+            #     FOLDER: docs/.vuepress/dist # vuepress 生成的静态文件存放的地方            
