@@ -3,7 +3,7 @@ home: false
 lang: zh-CN
 sidebar: false
 title: 迁移至 VuePress
-footer: GPU GPL v3 Licensed | Copyright (c) 2022-2023 Charlie Chen
+footer: GPU GPL v3 Licensed | Copyright (c) 2022-2024 Charlie Chen
 ---
 
 # 迁移至 VuePress
@@ -65,13 +65,13 @@ GitHub Pages本质是一个静态网站托管。它会主动取用仓库文件�
      ```yaml
      # name 可以自定义
      name: Deploy to GitHub Pages
-     
+
      # 触发条件：在 push 到 main/master 分支后，新的 Github 项目 应该都是 main，而之前的项目一般都是 master
      on:
        push:
          branches:
            - main
-     
+
      # 任务
      jobs:
        build-and-deploy:
@@ -83,11 +83,11 @@ GitHub Pages本质是一个静态网站托管。它会主动取用仓库文件�
              uses: actions/checkout@v2
              with:
                persist-credentials: false
-     
+
            # 生成静态文件
            - name: Build
              run: npm install && npm run docs:build # 如仓库的包管理器是yarn，则应执行yarn && yarn docs:build
-     
+
            # 部署到 GitHub Pages
            - name: Deploy
              uses: JamesIves/github-pages-deploy-action@releases/v3
@@ -95,7 +95,7 @@ GitHub Pages本质是一个静态网站托管。它会主动取用仓库文件�
                ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # 也就是我们刚才生成的 secret
                BRANCH: gh-pages # 部署到 gh-pages 分支，因为 main 分支存放的一般是源码，而 gh-pages 分支则用来存放生成的静态文件
                FOLDER: docs/.vuepress/dist # vuepress 生成的静态文件存放的地方
-     
+
      ```
 
 5.   将上述修改提交至main分支，稍等几分钟可以看到Action执行完毕，并自动将生成的文件推送至`gh-pages`。

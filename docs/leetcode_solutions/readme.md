@@ -3,7 +3,7 @@ home: false
 lang: zh-CN
 sidebar: false
 title: LeetCode Solutions
-footer: GPU GPL v3 Licensed | Copyright (c) 2022 Charlie Chen
+footer: GPU GPL v3 Licensed | Copyright (c) 2024 Charlie Chen
 ---
 # 简介
 
@@ -13,4 +13,4 @@ footer: GPU GPL v3 Licensed | Copyright (c) 2022 Charlie Chen
 
 # Introduction
 
-This section saves some of my solutions to LeetCode problems, in the same order as in LeetCode. You can also view my solution repo here: [https://github.com/bsmsnd/LeetCode-CharlieChen](https://github.com/bsmsnd/LeetCode-CharlieChen). 
+This section saves some of my solutions to LeetCode problems, in the same order as in LeetCode. You can also view my solution repo here: [https://github.com/bsmsnd/LeetCode-CharlieChen](https://github.com/bsmsnd/LeetCode-CharlieChen).
