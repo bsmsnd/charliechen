@@ -26,11 +26,12 @@ module.exports = {
       locales: {
         '/': {
           selectText: '选择语言',
-          label: '中文🇨🇳',  
+          label: '中文🇨🇳',
           nav: [
             { text: '刷题', link: '/leetcode_solutions/' },
             { text: 'Migrate To VuePress', link: '/to_vuepress/' },
-            { text: 'GitHub', link: 'https://github.com/bsmsnd/charliechen'},
+            { text: 'Misc', link: '/misc/' },
+            { text: 'Git Repo', link: 'https://github.com/bsmsnd/charliechen'},
           ]
         },
         '/en/': {
@@ -38,7 +39,7 @@ module.exports = {
           label: 'English🇺🇸',
           nav: [
             { text: 'LeetCode Solutions', link: '/leetcode_solutions/' },
-            { text: 'GitHub', link: 'https://github.com/bsmsnd/charliechen'},
+            { text: 'GitHub Repo', link: 'https://github.com/bsmsnd/charliechen'},
           ]
         }
       }
