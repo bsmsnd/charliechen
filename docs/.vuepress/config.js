@@ -29,8 +29,8 @@ module.exports = {
           label: '中文🇨🇳',
           nav: [
             { text: '刷题', link: '/leetcode_solutions/' },
-            { text: 'Migrate To VuePress', link: '/to_vuepress/' },
-            { text: 'Misc', link: '/misc/' },
+            { text: '迁移至VuePress', link: '/to_vuepress/' },
+            { text: '杂记', link: '/misc/' },
             { text: 'Git Repo', link: 'https://github.com/bsmsnd/charliechen'},
           ]
         },
